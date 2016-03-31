@@ -31,6 +31,8 @@ a300658979be: Download complete
 ffdaafd1ca50: Download complete
 d047ae21eeaf: Download complete
 ```
+此外，你也可以自己搭建，或者使用网络上的 Mirror 来加快镜像下载的速度。在国内一般被称为“加速器”或者“镜像加速”
+在Docker 1.9 及之后的版本都可以通过使用 编辑 docker.service 文件来使用镜像，在 “ExecStart”一行最后面添加--registry-mirror=（加速地址）即可
 
 完成后，即可随时使用该镜像了，例如创建一个容器，让其中运行 bash 应用。
 ```
